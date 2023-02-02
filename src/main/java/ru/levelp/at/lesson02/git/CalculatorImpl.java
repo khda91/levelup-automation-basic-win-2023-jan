@@ -31,7 +31,7 @@ public class CalculatorImpl implements Calculator {
     }
 
     @Override
-    public BigDecimal multiply(BigDecimal... a) {
-        return null;
+    public BigDecimal multiply(BigDecimal... array) {
+        return Arrays.stream(array).reduce(BigDecimal::multiply).get();
     }
 }

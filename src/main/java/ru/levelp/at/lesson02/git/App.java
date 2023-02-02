@@ -18,6 +18,15 @@ public class App {
         // умножение
         System.out.println("10 * 12 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(12)));
         System.out.println("10 * 120 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(120)));
+        System.out.println("10 * 120 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(120)));
+        System.out.println("10 * 120 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(120)));
+        System.out.println("10 * 120 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(120)));
+        System.out.println("10 * 120 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(120)));
+        System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
+        System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
+        System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
+        System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
+        System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
         System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
         System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
         System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));

@@ -23,5 +23,8 @@ public class App {
         System.out.println("10 * 12 * 20 * 3 = "
                 + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(12),
                 BigDecimal.valueOf(20), BigDecimal.valueOf(3)));
+
+        // деление
+        System.out.println("10 / 12 = " + calculator.divide(BigDecimal.valueOf(10), BigDecimal.valueOf(12)));
     }
 }

@@ -23,4 +23,9 @@ public class CalculatorImpl implements Calculator {
     public BigDecimal divide(BigDecimal a, BigDecimal b) {
         return a.divide(b);
     }
+
+    @Override
+    public BigDecimal sum(BigDecimal... array) {
+        return null;
+    }
 }

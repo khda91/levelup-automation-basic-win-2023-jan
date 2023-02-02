@@ -11,6 +11,4 @@ public interface Calculator {
     BigDecimal multiply(BigDecimal a, BigDecimal b);
 
     BigDecimal divide(BigDecimal a, BigDecimal b);
-
-    BigDecimal abs(BigDecimal a);
 }

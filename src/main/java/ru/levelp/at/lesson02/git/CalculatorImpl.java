@@ -16,6 +16,11 @@ public class CalculatorImpl implements Calculator {
     }
 
     @Override
+    public BigDecimal subtract(BigDecimal... array) {
+        return Arrays.stream(array).reduce(BigDecimal::subtract).get();
+    }
+
+    @Override
     public BigDecimal multiply(BigDecimal a, BigDecimal b) {
         return a.multiply(b);
     }

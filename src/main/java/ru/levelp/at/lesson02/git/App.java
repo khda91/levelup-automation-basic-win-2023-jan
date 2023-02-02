@@ -13,6 +13,11 @@ public class App {
                 + calculator.sum(BigDecimal.valueOf(10), BigDecimal.valueOf(12),
                 BigDecimal.valueOf(20), BigDecimal.valueOf(3)));
 
+        // вычитание
+        System.out.println("10 - 12 - 20 - 3 = "
+                + calculator.subtract(BigDecimal.valueOf(10), BigDecimal.valueOf(12),
+                BigDecimal.valueOf(20), BigDecimal.valueOf(3)));
+
         // умножение
         System.out.println("10 * 12 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(12)));
     }

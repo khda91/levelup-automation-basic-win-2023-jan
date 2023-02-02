@@ -1,6 +1,7 @@
 package ru.levelp.at.lesson02.git;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 public class CalculatorImpl implements Calculator {
     @Override
@@ -26,6 +27,6 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public BigDecimal sum(BigDecimal... array) {
-        return null;
+        return Arrays.stream(array).reduce(BigDecimal::add).get();
     }
 }

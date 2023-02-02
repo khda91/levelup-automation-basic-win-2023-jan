@@ -20,6 +20,7 @@ public class App {
         System.out.println("10 * 120 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(120)));
         System.out.println("10 * 10 = " + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
         System.out.println("100 * 100 = " + calculator.multiply(BigDecimal.valueOf(100), BigDecimal.valueOf(100)));
+        System.out.println("10 * 100 = " + calculator.multiply(BigDecimal.valueOf(100), BigDecimal.valueOf(100)));
         System.out.println("10 * 12 * 20 * 3 = "
                 + calculator.multiply(BigDecimal.valueOf(10), BigDecimal.valueOf(12),
                 BigDecimal.valueOf(20), BigDecimal.valueOf(3)));

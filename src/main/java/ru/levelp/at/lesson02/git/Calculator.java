@@ -8,8 +8,6 @@ public interface Calculator {
 
     BigDecimal subtract(BigDecimal a, BigDecimal b);
 
-    BigDecimal subtract(BigDecimal... array);
-
     BigDecimal multiply(BigDecimal a, BigDecimal b);
 
     BigDecimal divide(BigDecimal a, BigDecimal b);

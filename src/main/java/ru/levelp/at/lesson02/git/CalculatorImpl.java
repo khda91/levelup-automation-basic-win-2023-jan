@@ -29,4 +29,9 @@ public class CalculatorImpl implements Calculator {
     public BigDecimal sum(BigDecimal... array) {
         return Arrays.stream(array).reduce(BigDecimal::add).get();
     }
+
+    @Override
+    public BigDecimal multiply(BigDecimal... a) {
+        return null;
+    }
 }

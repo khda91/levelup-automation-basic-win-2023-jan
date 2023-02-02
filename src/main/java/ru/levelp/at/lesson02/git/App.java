@@ -9,6 +9,7 @@ public class App {
 
         // сложение
         System.out.println("10 + 12 = " + calculator.sum(BigDecimal.valueOf(10), BigDecimal.valueOf(12)));
+        System.out.println("10 + 10 = " + calculator.sum(BigDecimal.valueOf(10), BigDecimal.valueOf(10)));
         System.out.println("10 + 12 + 20 + 3 = "
                 + calculator.sum(BigDecimal.valueOf(10), BigDecimal.valueOf(12),
                 BigDecimal.valueOf(20), BigDecimal.valueOf(3)));

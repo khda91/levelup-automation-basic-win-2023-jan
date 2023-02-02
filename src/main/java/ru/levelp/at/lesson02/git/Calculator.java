@@ -8,7 +8,7 @@ public interface Calculator {
 
     BigDecimal subtract(BigDecimal a, BigDecimal b);
 
-    BigDecimal subtract(BigDecimal a, BigDecimal b, BigDecimal c, BigDecimal d);
+    BigDecimal subtract(BigDecimal... array);
 
     BigDecimal multiply(BigDecimal a, BigDecimal b);
 

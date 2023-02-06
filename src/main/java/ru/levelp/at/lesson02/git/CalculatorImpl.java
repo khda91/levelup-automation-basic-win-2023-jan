@@ -11,6 +11,11 @@ public class CalculatorImpl implements Calculator {
     }
 
     @Override
+    public BigDecimal sum(BigDecimal... array) {
+        return Arrays.stream(array).reduce(BigDecimal::add).get();
+    }
+
+    @Override
     public BigDecimal subtract(BigDecimal a, BigDecimal b) {
         return a.subtract(b);
     }
@@ -26,17 +31,13 @@ public class CalculatorImpl implements Calculator {
     }
 
     @Override
+    public BigDecimal multiply(BigDecimal... array) {
+        return Arrays.stream(array).reduce(BigDecimal::multiply).get();
+    }
+
+    @Override
     public BigDecimal divide(BigDecimal a, BigDecimal b) {
         return a.divide(b);
     }
 
-    @Override
-    public BigDecimal sum(BigDecimal... array) {
-        return Arrays.stream(array).reduce(BigDecimal::add).get();
-    }
-
-    @Override
-    public BigDecimal multiply(BigDecimal... array) {
-        return Arrays.stream(array).reduce(BigDecimal::multiply).get();
-    }
 }

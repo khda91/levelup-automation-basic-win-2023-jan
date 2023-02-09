@@ -16,7 +16,6 @@
         <checkstyle.version>10.3.3</checkstyle.version>
         <commons-io.version>2.11.0</commons-io.version>
         <commons-collections4.version>4.4</commons-collections4.version>
-        <testng.version>7.7.1</testng.version>
 
         <maven-checkstyle-plugin.version>3.2.0</maven-checkstyle-plugin.version>
     </properties>
@@ -26,7 +25,6 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
-            <scope>compile</scope> <!-- можно не указывать, compile значение по умолчанию для тэга scope -->
         </dependency>
 
         <dependency>
@@ -34,14 +32,6 @@
             <artifactId>commons-collections4</artifactId>
             <version>${commons-collections4.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>

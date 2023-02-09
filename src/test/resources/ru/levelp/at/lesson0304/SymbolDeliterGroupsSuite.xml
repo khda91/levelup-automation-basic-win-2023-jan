@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Symbol Deliter Groups Suite">
+
+    <test name="Groups Positive">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="ru.levelp.at.lesson0304.groups.*"/>
+        </packages>
+    </test>
+
+    <test name="Groups Negative">
+        <groups>
+            <run>
+                <exclude name="positive"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="ru.levelp.at.lesson0304.groups.*"/>
+        </packages>
+    </test>
+
+</suite>

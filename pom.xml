@@ -19,7 +19,32 @@
         <testng.version>7.7.1</testng.version>
 
         <maven-checkstyle-plugin.version>3.2.0</maven-checkstyle-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>lesson0304-base-suite</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <suite.file>${project.basedir}/src/test/resources/ru/levelp/at/lesson0304/SymbolDeliterSuite.xml</suite.file>
+            </properties>
+        </profile>
+        <profile>
+            <id>lesson0304-before-after-test-suite</id>
+            <properties>
+                <suite.file>${project.basedir}/src/test/resources/ru/levelp/at/lesson0304/SymbolDeliterBeforeAfterTestExampleSuite.xml</suite.file>
+            </properties>
+        </profile>
+        <profile>
+            <id>lesson0304-groups-suite</id>
+            <properties>
+                <suite.file>${project.basedir}/src/test/resources/ru/levelp/at/lesson0304/SymbolDeliterGroupsSuite.xml</suite.file>
+            </properties>
+        </profile>
+    </profiles>
 
     <dependencies>
         <dependency>
@@ -77,6 +102,17 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suite.file}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
             </plugin>
         </plugins>
     </build>

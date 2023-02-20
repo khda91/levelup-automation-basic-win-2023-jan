@@ -19,6 +19,7 @@
         <junit-jupiter.version>5.9.2</junit-jupiter.version>
         <selenium.version>4.8.0</selenium.version>
         <assertj.version>3.24.2</assertj.version>
+        <javafaker.version>1.0.2</javafaker.version>
 
         <maven-checkstyle-plugin.version>3.2.0</maven-checkstyle-plugin.version>
     </properties>
@@ -56,6 +57,11 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
+        </dependency>
 
     </dependencies>
 

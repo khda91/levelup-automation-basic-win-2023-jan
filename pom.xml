@@ -46,7 +46,7 @@
 
         <dependency>
             <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-suite-engine</artifactId>
+            <artifactId>junit-platform-suite</artifactId>
             <version>${junit-platform-suite-engine.version}</version>
             <scope>test</scope>
         </dependency>
@@ -57,6 +57,12 @@
             <id>positive-suite</id>
             <properties>
                 <group.name>positive</group.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>negative-suite-class</id>
+            <properties>
+                <class.name>**/NegativeSuite.class</class.name>
             </properties>
         </profile>
     </profiles>
@@ -114,9 +120,11 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${maven-failsafe-plugin.version}</version>
                 <configuration>
+<!--                    <test>ru.levelp.at.lesson0304.junit.suites.PositiveSuite</test>-->
                     <!--                    <groups>${group.name}</groups>-->
                     <includes>
-                        <include>**/*Suite.class</include>
+<!--                        <include>**/*Suite.class</include>-->
+                        <include>${class.name}</include>
                     </includes>
                 </configuration>
                 <executions>

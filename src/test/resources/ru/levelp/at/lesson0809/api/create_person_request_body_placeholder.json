@@ -1,0 +1,30 @@
+{
+    "role": "LECTOR",
+    "email": "{email}",
+    "phoneNumber": "{phoneNumber}",
+    "placeOfWork": "Engineer",
+    "identity": {
+        "firstName": "{firstName}",
+        "lastName": "{lastName}",
+        "middleName": "Ivanovich",
+        "gender": "MALE",
+        "dateOfBirth": "1980-02-07",
+        "placeOfBirth": "Moscow",
+        "passport": {
+            "series": "1234",
+            "number": "123456",
+            "placeOfIssue": "",
+            "dateOfIssue": "1980-02-07",
+            "departmentCode": "123-456"
+        }
+    },
+    "address": {
+        "street": "Beethovenstrasse",
+        "houseNumber": 12,
+        "houseBuilding": 1,
+        "houseLetter": "A",
+        "flat": 123,
+        "city": "Moscow",
+        "postalCode": "123456"
+    }
+}

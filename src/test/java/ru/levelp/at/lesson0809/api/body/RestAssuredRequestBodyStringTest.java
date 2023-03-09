@@ -63,7 +63,7 @@ class RestAssuredRequestBodyStringTest {
             .spec(requestSpecification)
             .body("{\n"
                 + "  \"role\": \"LECTOR\",\n"
-                + "  \"email\": \""+ email + "\",\n"
+                + "  \"email\": \"" + email + "\",\n"
                 + "  \"phoneNumber\": \"+79211234567\",\n"
                 + "  \"placeOfWork\": \"Engineer\",\n"
                 + "  \"identity\": {\n"

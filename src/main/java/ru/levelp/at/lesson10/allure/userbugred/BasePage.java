@@ -1,4 +1,4 @@
-package ru.levelp.at.lesson0507.selenium.page.objects.type.fluent;
+package ru.levelp.at.lesson10.allure.userbugred;
 
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +24,7 @@ public abstract class BasePage {
         driver.navigate().to(URL + relativeUrl);
     }
 
-    // public abstract void open();
+    public abstract void open();
 
     protected void click(final WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();

@@ -1,11 +1,11 @@
 package ru.levelp.at.lesson0809.api.model;
 
+import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import java.time.LocalDate;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,5 +21,4 @@ public class IdentityData {
     private LocalDate dateOfBirth;
     private String placeOfBirth;
     private PassportData passport;
-
 }

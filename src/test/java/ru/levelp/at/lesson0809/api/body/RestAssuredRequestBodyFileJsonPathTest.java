@@ -57,8 +57,8 @@ class RestAssuredRequestBodyFileJsonPathTest {
     void createPerson() {
         DocumentContext body = null;
         try {
-            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809" +
-                "/api/create_person_request_body.json"));
+            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809"
+                + "/api/create_person_request_body.json"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -91,8 +91,8 @@ class RestAssuredRequestBodyFileJsonPathTest {
     void createPersonCity() {
         DocumentContext body = null;
         try {
-            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809" +
-                "/api/create_person_request_body.json"));
+            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809"
+                + "/api/create_person_request_body.json"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -125,8 +125,8 @@ class RestAssuredRequestBodyFileJsonPathTest {
     void createPersonDeleteAddress() {
         DocumentContext body = null;
         try {
-            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809" +
-                "/api/create_person_request_body.json"));
+            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809"
+                + "/api/create_person_request_body.json"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -157,8 +157,8 @@ class RestAssuredRequestBodyFileJsonPathTest {
     void createPersonWithAdditionalField() {
         DocumentContext body = null;
         try {
-            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809" +
-                "/api/create_person_request_body.json"));
+            body = JsonPath.parse(new File("src/test/resources/ru/levelp/at/lesson0809"
+                + "/api/create_person_request_body.json"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

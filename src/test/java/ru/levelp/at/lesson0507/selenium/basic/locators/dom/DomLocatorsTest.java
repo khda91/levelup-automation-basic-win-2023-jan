@@ -1,5 +1,6 @@
 package ru.levelp.at.lesson0507.selenium.basic.locators.dom;
 
+import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.levelp.at.utils.SleepUtils;
-import java.util.List;
 
 public class DomLocatorsTest {
 

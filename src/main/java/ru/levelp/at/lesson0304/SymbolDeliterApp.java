@@ -1,8 +1,8 @@
 package ru.levelp.at.lesson0304;
 
-import org.apache.commons.collections4.CollectionUtils;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.apache.commons.collections4.CollectionUtils;
 
 public class SymbolDeliterApp implements SymbolDeliter {
 
@@ -21,7 +21,7 @@ public class SymbolDeliterApp implements SymbolDeliter {
         }
 
         return list.stream()
-            .map(str -> str.replaceAll(letter, ""))
-            .collect(Collectors.toList());
+                   .map(str -> str.replaceAll(letter, ""))
+                   .collect(Collectors.toList());
     }
 }

@@ -1,5 +1,8 @@
 package ru.levelp.at.lesson0507.selenium.basic.locators.xpath;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,10 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.levelp.at.utils.SleepUtils;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class XpathSelectorLocatorsTest {
 
@@ -181,8 +180,8 @@ public class XpathSelectorLocatorsTest {
     void checkFirstElementFindAssertionsThroughString() {
         List<WebElement> links = driver.findElements(By.xpath("//*[@id='ph-whiteline']/div/div/a"));
         List<String> linksText = links.stream()
-                                    .map(WebElement::getText)
-                                    .collect(Collectors.toList());
+                                      .map(WebElement::getText)
+                                      .collect(Collectors.toList());
         Assertions.assertThat(linksText).startsWith("Mail.ru");
     }
 

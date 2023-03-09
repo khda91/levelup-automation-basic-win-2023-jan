@@ -1,5 +1,10 @@
 package ru.levelp.at.lesson0809.api.body;
 
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.empty;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.not;
+
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -8,18 +13,14 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
 
 class RestAssuredRequestBodyFilePlaceholderTest {
 
@@ -57,8 +58,8 @@ class RestAssuredRequestBodyFilePlaceholderTest {
         String body = "";
         try {
             body = FileUtils
-                .readFileToString(new File("src/test/resources/ru/levelp/at/lesson0809" +
-                    "/api/create_person_request_body_placeholder.json"), StandardCharsets.UTF_8);
+                .readFileToString(new File("src/test/resources/ru/levelp/at/lesson0809"
+                    + "/api/create_person_request_body_placeholder.json"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -1,5 +1,9 @@
 package ru.levelp.at.lesson0507.selenium.basic.wait;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.time.Duration;
+import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,11 +13,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 class SeleniumImplicitVsExplicitWaitTest {
 
@@ -70,7 +69,6 @@ class SeleniumImplicitVsExplicitWaitTest {
             System.out.println("Implicit less than Explicit: " + (endTime - startTime) + " ms");
         }
     }
-
 
     @Test
     void searchImplicitTogetherExplicitTest() {

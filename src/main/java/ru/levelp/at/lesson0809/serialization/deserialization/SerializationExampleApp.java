@@ -1,14 +1,13 @@
 package ru.levelp.at.lesson0809.serialization.deserialization;
 
 import com.github.javafaker.Faker;
-import org.apache.commons.lang3.RandomStringUtils;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.UUID;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class SerializationExampleApp {
 

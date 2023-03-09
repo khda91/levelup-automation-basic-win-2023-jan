@@ -1,5 +1,9 @@
 package ru.levelp.at.lesson0507.selenium.basic.wait;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.time.Duration;
+import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -7,10 +11,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import java.time.Duration;
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 class SeleniumImplicitWaitTest {
 

@@ -1,5 +1,6 @@
-package ru.levelp.at.lesson0507.selenium.page.objects.page.component;
+package ru.levelp.at.lesson10.allure.dns;
 
+import io.qameta.allure.Step;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +14,12 @@ public class DnsIndexPage extends DnsBasePage {
     }
 
     @Override
+    @Step("Открываем домашнюю страницу DNS магазина")
     public void open() {
         open("");
     }
 
+    @Step("Открываем категорию {categoryName}")
     public void selectCategory(final String categoryName) {
         List<WebElement> categories = wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By
             .xpath("//*[@class='catalog-menu__root-item']"

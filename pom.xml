@@ -117,6 +117,12 @@
                 <suite.class.path>**/lesson10/**/*Test.class</suite.class.path>
             </properties>
         </profile>
+        <profile>
+            <id>lesson11-jenkins</id>
+            <properties>
+                <suite.class.path>**/lesson11/**/*Test.class</suite.class.path>
+            </properties>
+        </profile>
     </profiles>
 
     <build>

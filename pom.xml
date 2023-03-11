@@ -120,7 +120,7 @@
         <profile>
             <id>lesson11-jenkins</id>
             <properties>
-                <suite.class.path>**/lesson11/**/*Test.class</suite.class.path>
+                <suite.class.path>**/lesson11/jenkins/**/pattern/**/*Test.class</suite.class.path>
             </properties>
         </profile>
     </profiles>

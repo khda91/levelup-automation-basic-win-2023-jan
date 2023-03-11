@@ -1,4 +1,4 @@
-package ru.levelp.at.lesson11.jenkins.pattern.step;
+package ru.levelp.at.lesson11.jenkins.step.design.pattern.step;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

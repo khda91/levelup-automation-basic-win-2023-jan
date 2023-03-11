@@ -1,4 +1,4 @@
-package ru.levelp.at.lesson11.jenkins.pattern;
+package ru.levelp.at.lesson11.jenkins.step.design.pattern;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.levelp.at.lesson11.jenkins.BaseSeleniumTest;
 import ru.levelp.at.lesson11.jenkins.annotation.MyCustomLabel;
-import ru.levelp.at.lesson11.jenkins.pattern.step.UserbugredStep;
+import ru.levelp.at.lesson11.jenkins.step.design.pattern.step.UserbugredStep;
 
 @Epic("Epic 1")
 @TmsLink("OOO-546")

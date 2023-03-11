@@ -1,4 +1,4 @@
-package ru.levelp.at.lesson11.jenkins.pattern;
+package ru.levelp.at.lesson11.jenkins.step.design.pattern;
 
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;

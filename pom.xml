@@ -17,6 +17,7 @@
         <commons-io.version>2.11.0</commons-io.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <junit-jupiter.version>5.9.2</junit-jupiter.version>
+        <junit-platform-suite-engine.version>1.9.2</junit-platform-suite-engine.version>
         <selenium.version>4.8.0</selenium.version>
         <assertj.version>3.24.2</assertj.version>
         <javafaker.version>1.0.2</javafaker.version>
@@ -26,6 +27,7 @@
         <jackson-databind.version>2.14.2</jackson-databind.version>
         <allure.version>2.21.0</allure.version>
         <aspectj.version>1.9.19</aspectj.version>
+        <cucumber.version>7.11.1</cucumber.version>
 
         <maven-checkstyle-plugin.version>3.2.0</maven-checkstyle-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M8</maven-surefire-plugin.version>
@@ -49,6 +51,13 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+            <version>${junit-platform-suite-engine.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -108,6 +117,18 @@
             <version>${allure.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <profiles>

@@ -1,8 +1,9 @@
-.idea
-target
+**/.idea
+**/target
 
 *.iml
 .gradle
 build
 target/allure-results
-.allure
+**/.allure
+**/allure-results
